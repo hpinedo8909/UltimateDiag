@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/main_app/css/log_in.css' %}" />
+    <title>Log in</title>
+  </head>
+  <body>
+    <div class="home_link">
+      <a href="{% url 'main_app:home' %}">Home</a>
+    </div>
+    <div class="register">
+      <h1>Register</h1>
+      <form class="register_form" action="" method="post">
+        <input
+          type="text"
+          name="username_register"
+          class="text-box"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          class="text-box"
+          placeholder="example@email.com"
+          required
+        />
+        <input
+          type="password"
+          name="password_register"
+          class="password"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="password_register"
+          class="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" name="submit" class="send-btn" value="Register" />
+      </form>
+      <p class="login_link">
+        Already have an account?.<a href="{% url 'main_app:log_in' %}"
+          >Login here</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

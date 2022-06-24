@@ -1,0 +1,1277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(6, 4, 151, 0.815);
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.brand-title {
+  margin: 15px 25px;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+ul {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+}
+
+.sub-menu {
+  display: none;
+  /* position: absolute; */
+  flex-direction: column;
+  width: 140px;
+  background: #2c3e73;
+
+  /* position: relative;                      */
+  width: 100%;
+}
+
+.sub-menu li {
+  list-style: none;
+}
+
+.sub-menu ul {
+  flex-direction: column;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+li a {
+  padding: 0.5rem 1 rem;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.toggle-button:active {
+  display: none;
+}
+
+ul li:hover {
+  background-color: #345cb8;
+}
+
+li:active .sub-menu {
+  display: flex;
+  background-color: cornflowerblue;
+}
+
+.toggle-button:active + ul {
+  display: flex;
+}
+
+/*slide de la seccion de bienvenida*/
+
+.container {
+  display: flex;
+  position: relative;
+  width: 400%;
+  scrollbar-color: blue;
+  animation: 12s slider infinite;
+}
+
+.container section {
+  width: 25%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+.section1 {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-image: url("./welcome-pic-small.jpg");
+  background-size: cover;
+}
+
+.text-section1 {
+  position: absolute;
+  top: 145px;
+  right: 13px;
+  font-size: 1.2rem;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+.section2 {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-image: url("./atencion-cliente-pic-small.jpg");
+  background-size: cover;
+}
+
+.text-section2 {
+  position: absolute;
+  top: 98px;
+  right: 13px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.section3 {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-image: url("./aboutus-pic-small.jpg");
+  background-size: cover;
+}
+
+.text-section3 {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.section4 {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-image: url("./welcome-pic-small.jpg");
+  background-size: cover;
+}
+
+.text-section4 {
+  position: absolute;
+  top: 145px;
+  right: 13px;
+  font-size: 1.2rem;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+/* section 2 */
+
+.container-2 {
+  display: flex;
+  background: aliceblue;
+  align-items: center;
+  flex-direction: column;
+  padding: 29px;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+}
+
+/* Services section */
+.services {
+  display: flex;
+  background-color: aliceblue;
+  margin: 30px 0;
+  flex-direction: column;
+  width: 100vw;
+}
+/* Services ---- MRI */
+.mri {
+  display: flex;
+  margin: 15px 0;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.mri span {
+  min-width: 200px;
+  max-height: 100px;
+  background-image: url("./mri-pic-small.jpg");
+  background-size: cover;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+}
+.mri h2 {
+  padding: 40px 0;
+}
+.mri p {
+  padding: 15px 30px 0 30px;
+}
+
+/* Services ---- NCV */
+.ncv {
+  display: flex;
+  margin: 15px 0;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.ncv span {
+  min-width: 200px;
+  max-height: 100px;
+  background-image: url("./nervios-pic-small.jpg");
+  background-size: cover;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+}
+.ncv h2 {
+  padding: 40px 0;
+}
+.ncv p {
+  padding: 15px 30px 0 30px;
+}
+
+/* services ----Ultrasounds */
+
+.ultrasound {
+  display: flex;
+  margin: 15px 0;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.ultrasound span {
+  min-width: 175px;
+  max-height: 85px;
+  background-image: url("./ultrasound-pic-small.jpg");
+  background-size: cover;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+}
+.ultrasound h2 {
+  padding: 40px 0;
+}
+.ultrasound p {
+  padding: 15px 30px 0 30px;
+}
+
+/* Services ---- Xrays */
+
+.xray {
+  display: flex;
+  margin: 15px 0;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.xray span {
+  min-width: 200px;
+  max-height: 100px;
+  background-image: url("./xray-pic-small.jpg");
+  background-size: cover;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+}
+.xray h2 {
+  padding: 40px 0;
+}
+.xray p {
+  padding: 15px 30px 0 30px;
+}
+
+/* Footer */
+
+footer {
+  min-height: 100vh;
+  background: url("./atencion-cliente-pic-small.jpg");
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.contact-inf {
+  color: #fff;
+  max-width: 400px;
+  line-height: 20px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.contact-inf div {
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 30px;
+}
+
+.contact-info .contact-form {
+  margin: 30px 50px;
+  flex: 1;
+}
+
+.contact-form h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .text-box:first-child {
+  margin-right: 15px;
+}
+
+.contact-form textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn {
+  float: right;
+  background: #345cb8;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact-form .send-btn:hover {
+  background: #002e5d;
+}
+
+@media (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(6, 4, 151, 0.815);
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+  }
+
+  .brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: white;
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .toggle-button:active {
+    display: none;
+  }
+
+  .toggle-button:active + ul {
+    display: flex;
+  }
+
+  .sub-menu {
+    display: none;
+    /* position: absolute; */
+    flex-direction: column;
+    /* width: 140px; */
+    background: #2c3e73;
+
+    position: relative;
+    /* flex-direction: column;         */
+    width: 100%;
+  }
+
+  .sub-menu li {
+    list-style: none;
+  }
+
+  .sub-menu ul {
+    flex-direction: column;
+  }
+
+  li:hover .sub-menu {
+    display: flex;
+    background-color: cornflowerblue;
+  }
+
+  ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  li a {
+    padding: 0.5rem 1 rem;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+  }
+
+  ul li:hover {
+    background-color: #345cb8;
+  }
+
+  /*slide de la seccion de bienvenida*/
+
+  .container {
+    display: flex;
+    position: relative;
+    width: 400%;
+    scrollbar-color: blue;
+    animation: 12s slider infinite;
+  }
+
+  .container section {
+    width: 25%;
+    float: left;
+  }
+
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    100% {
+      left: -300%;
+    }
+  }
+
+  .section1 {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("./welcome-pic-medium.jpg");
+    background-size: cover;
+  }
+
+  .text-section1 {
+    position: absolute;
+    bottom: 200px;
+    right: 25px;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #002e5d;
+  }
+
+  .section2 {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("./atencion-cliente-pic-medium.jpg");
+    background-size: cover;
+  }
+
+  .text-section2 {
+    position: absolute;
+    bottom: 100px;
+    right: 25px;
+    color: #002e5d;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+  .section3 {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("./aboutus-pic-medium.jpg");
+    background-size: cover;
+  }
+
+  .text-section3 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: #002e5d;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+  .section4 {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("./welcome-pic-medium.jpg");
+    background-size: cover;
+  }
+
+  .text-section4 {
+    position: absolute;
+    bottom: 200px;
+    right: 25px;
+    color: #002e5d;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+  /* section 2 */
+
+  .container-2 {
+    display: flex;
+    height: auto;
+    margin: 10px;
+    background: aliceblue;
+    align-items: center;
+    flex-direction: column;
+    padding: 29px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+  }
+
+  .container-2 h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+
+  .container-2 p {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+
+  /* Services section */
+  .services {
+    display: flex;
+    background-color: aliceblue;
+    margin: 30px 0;
+    flex-direction: column;
+    width: 100vw;
+  }
+  /* Services ---- MRI */
+  .mri {
+    display: flex;
+    height: auto;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .mri span {
+    min-width: 400px;
+    min-height: 200px;
+    background-image: url("./mri-pic-medium.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .mri h2 {
+    font-size: 4rem;
+    align-self: center;
+  }
+  .mri p {
+    font-size: x-large;
+    /* padding: 30px 30px 0 30px; */
+  }
+
+  /* Services ---- NCV */
+  .ncv {
+    display: flex;
+    height: auto;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .ncv span {
+    min-width: 400px;
+    min-height: 200px;
+    background-image: url("./nervios-pic-medium.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .ncv h2 {
+    font-size: 4rem;
+    align-self: center;
+  }
+  .ncv p {
+    font-size: x-large;
+    /* padding: 30px 30px 0 30px; */
+  }
+
+  /* services ----Ultrasounds */
+
+  .ultrasound {
+    display: flex;
+    height: auto;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .ultrasound span {
+    min-width: 300px;
+    min-height: 150px;
+    background-image: url("./ultrasound-pic-small.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .ultrasound h2 {
+    font-size: 4rem;
+    padding: 40px 0;
+    align-self: center;
+  }
+  .ultrasound p {
+    font-size: x-large;
+    /* padding: 15px 30px 0 30px; */
+  }
+
+  /* Services ---- Xrays */
+
+  .xray {
+    display: flex;
+    height: auto;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .xray span {
+    min-width: 400px;
+    min-height: 200px;
+    background-image: url("./xray-pic-small.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .xray h2 {
+    font-size: 4rem;
+    padding: 40px 0;
+    align-self: center;
+  }
+  .xray p {
+    font-size: x-large;
+  }
+
+  /* Footer */
+
+  footer {
+    min-height: 100vh;
+    background: url("./atencion-cliente-pic-small.jpg");
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-inf {
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .contact-info i {
+    margin-right: 20px;
+    font-size: 25px;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: 30px;
+  }
+
+  .contact-info .contact-form {
+    margin: 30px 50px;
+    flex: 1;
+  }
+
+  .contact-form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .contact-form .text-box {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  .contact-form .text-box:first-child {
+    margin-right: 15px;
+  }
+
+  .contact-form textarea {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.5rem;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  .contact-form .send-btn {
+    float: right;
+    background: #345cb8;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+
+  .contact-form .send-btn:hover {
+    background: #002e5d;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 300, 0.5);
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .brand-title {
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    align-content: center;
+    font-size: 2rem;
+
+    margin: 15px 25px;
+    color: white;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: auto;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  ul li {
+    list-style: none;
+    margin-top: 25px;
+  }
+
+  ul li:hover {
+    background-color: #345cb8;
+    border-radius: 25px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    display: block;
+  }
+  .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    width: 140px;
+  }
+
+  .sub-menu li {
+    list-style: none;
+  }
+
+  .sub-menu a {
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2c3e73;
+    font-weight: 800;
+  }
+
+  .sub-menu ul {
+    flex-direction: column;
+  }
+
+  li:hover .sub-menu {
+    display: flex;
+    background-color: transparent;
+  }
+
+  /*slide de la seccion de bienvenida*/
+
+  .container {
+    display: flex;
+
+    width: 400%;
+    scrollbar-color: blue;
+    animation: 12s slider infinite;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .container section {
+    width: 25%;
+    float: left;
+  }
+
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    100% {
+      left: -300%;
+    }
+  }
+
+  .section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./welcome-pic-large.jpg");
+    background-size: cover;
+  }
+
+  .text-section1 {
+    position: absolute;
+    bottom: 200px;
+    right: 25px;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #002e5d;
+  }
+
+  .section2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./atencion-cliente-pic-large.jpg");
+    background-size: cover;
+  }
+
+  .text-section2 {
+    position: absolute;
+    bottom: 100px;
+    right: 25px;
+    color: #002e5d;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+  .section3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./aboutus-pic-large.jpg");
+    background-size: cover;
+  }
+
+  .text-section3 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: #002e5d;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+  .section4 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./welcome-pic-large.jpg");
+    background-size: cover;
+  }
+
+  .text-section4 {
+    position: absolute;
+    bottom: 200px;
+    right: 25px;
+    color: #002e5d;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+  /* section 2 */
+
+  .container-2 {
+    display: flex;
+    height: 44vh;
+    margin: 10px;
+    background: aliceblue;
+    align-items: center;
+    flex-direction: column;
+    padding: 29px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+  }
+
+  .container-2 h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+
+  .container-2 p {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+
+  /* Services section */
+  .services {
+    display: flex;
+    background-color: aliceblue;
+    margin: 30px 0;
+    flex-direction: column;
+    width: 100vw;
+  }
+  /* Services ---- MRI */
+  .mri {
+    display: flex;
+    height: auto;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .mri span {
+    min-width: 600px;
+    min-height: 300px;
+    background-image: url("./mri-pic-large.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .mri h2 {
+    font-size: 4rem;
+    align-self: center;
+  }
+  .mri p {
+    font-size: x-large;
+    /* padding: 30px 30px 0 30px; */
+  }
+
+  /* Services ---- NCV */
+  .ncv {
+    display: flex;
+    height: auto;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .ncv span {
+    min-width: 600px;
+    min-height: 300px;
+    background-image: url("./nervios-pic-large.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .ncv h2 {
+    font-size: 4rem;
+    align-self: center;
+  }
+  .ncv p {
+    font-size: x-large;
+    /* padding: 30px 30px 0 30px; */
+  }
+
+  /* services ----Ultrasounds */
+
+  .ultrasound {
+    display: flex;
+    height: auto;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .ultrasound span {
+    min-width: 600px;
+    min-height: 300px;
+    background-image: url("./ultrasound-pic-large.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .ultrasound h2 {
+    font-size: 4rem;
+    padding: 40px 0;
+    align-self: center;
+  }
+  .ultrasound p {
+    font-size: x-large;
+    /* padding: 15px 30px 0 30px; */
+  }
+
+  /* Services ---- Xrays */
+
+  .xray {
+    display: flex;
+    margin: 15px 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .xray span {
+    min-width: 600px;
+    min-height: 300px;
+    background-image: url("./xray-pic-large.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    align-self: center;
+  }
+  .xray h2 {
+    font-size: 4rem;
+    padding: 40px 0;
+    align-self: center;
+  }
+  .xray p {
+    font-size: x-large;
+    /* padding: 15px 30px 0 30px; */
+  }
+
+  /* Footer */
+  footer {
+    min-height: 100vh;
+    background: url("./atencion-cliente-pic-small.jpg");
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-inf {
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 1.8rem;
+  }
+
+  .contact-info i {
+    margin-right: 20px;
+    font-size: 25px;
+  }
+
+  .contact-form {
+    max-width: 700px;
+    margin-left: 100px;
+  }
+
+  .contact-info .contact-form {
+    flex: 1;
+  }
+
+  .contact-form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .contact-form .text-box {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  .contact-form .text-box:first-child {
+    margin-right: 15px;
+  }
+
+  .contact-form textarea {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.5rem;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  .contact-form .send-btn {
+    float: right;
+    background: #345cb8;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+
+  .contact-form .send-btn:hover {
+    background: #002e5d;
+  }
+}

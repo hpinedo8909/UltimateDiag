@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/main_app/css/style-base.css' %}" />
+    {% comment %}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <script src="{% static '/main_app/js/script.js' %}" defer></script>
+    {% endcomment %}
+    <title>Ultimate Diagnostic</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand-title">ULTIMATE DIAGNOSTIC</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        {% comment %}
+        <div class="navbar-links">
+          {% endcomment %}
+          <ul>
+            <li><a href="{% url 'main_app:log_in' %}">Log in</a></li>
+            <li>
+              <a href="#">Service</a>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="#mri">MRI</a></li>
+                  <li><a href="#nvc">NVC</a></li>
+                  <li><a href="#ultrasound">US</a></li>
+                  <li><a href="#xray">X Ray</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#about_us">About us</a></li>
+            <li><a href="#contact_us">Contact us</a></li>
+          </ul>
+          {% comment %}
+        </div>
+        {% endcomment %}
+      </nav>
+    </header>
+
+    {% block content%}{% endblock content%}
+  </body>
+  <footer>
+    <div class="contact-section" id="contact_us">
+      <div class="contact-inf">
+        <div>
+          <i class="fas fa-map-marker-alt"></i> 28870 S Dixie Hwy,<br />
+          Homestead, FL 33033
+        </div>
+        <div><i class="fas fa-envelope"></i> contact@email.com</div>
+        <div><i class="fas fa-phone"></i> +1 786 410 8737</div>
+        <div><i class="fas fa-clock"></i> Mon - Fri 8:00AM to 5:00PM</div>
+      </div>
+      <div class="contact-form">
+        <h2>CONTACT US</h2>
+        <form class="contact" action="" method="post">
+          <input
+            type="text"
+            name="name"
+            class="text-box"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="text-box"
+            placeholder="Your email"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <input type="submit" name="submit" class="send-btn" value="Send" />
+        </form>
+      </div>
+    </div>
+  </footer>
+</html>

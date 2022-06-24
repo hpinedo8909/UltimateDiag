@@ -1,0 +1,145 @@
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    background-image: url("./welcome-pic-large.jpg");
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_link {
+    background-color: #345cb8;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 50px 50px 50px 0;
+  }
+  .home_link a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 5px;
+  }
+  .log_in {
+    background-color: rgba(6, 4, 151, 0.815);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  .log_in h1 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 45px;
+  }
+  .log_in-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .log_in .text_box {
+    background: rgba(6, 4, 151, 0.815);
+    color: #fff;
+    border: none;
+    align-self: center;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 35px;
+    opacity: 0.9;
+  }
+  .log_in .btn_login {
+    width: 60px;
+    align-self: center;
+    background: #345cb8;
+    color: #fff;
+    border: none;
+    width: auto;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  .register_link {
+    color: #fff;
+    font-size: 16px;
+    align-self: center;
+  }
+  .register_link a {
+    color: #fff;
+    font-size: 18px;
+  }
+  .register {
+    display: flex;
+    flex-direction: column;
+    background: rgba(6, 4, 151, 0.815);
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .register_form {
+    display: flex;
+    flex-direction: column;
+  }
+  .register h1 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 45px;
+  }
+
+  .register .text-box {
+    background: rgba(6, 4, 151, 0.815);
+    color: #fff;
+    border: none;
+    align-self: center;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    opacity: 0.9;
+  }
+  .register .password {
+    background: rgba(6, 4, 151, 0.815);
+    color: #fff;
+    border: none;
+    align-self: center;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    opacity: 0.9;
+  }
+  .register .send-btn {
+    width: 60px;
+    align-self: center;
+    background: #345cb8;
+    color: #fff;
+    border: none;
+    width: auto;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  .login_link {
+    color: #fff;
+    font-size: 16px;
+    align-self: center;
+  }
+  .login_link a {
+    color: #fff;
+    font-size: 18px;
+  }
+}
